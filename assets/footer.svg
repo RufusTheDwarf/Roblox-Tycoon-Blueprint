@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="130" viewBox="0 0 1200 130" role="img" aria-labelledby="t d">
+<title id="t">Roblox Tycoon Blueprint footer</title><desc id="d">Closing red and blue geometric wave with the project motto.</desc>
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#E2231A"/><stop offset="1" stop-color="#0055BF"/></linearGradient></defs>
+<path d="M0 42C180 5 300 95 490 58S830 0 1200 48V130H0Z" fill="#202326"/>
+<path d="M0 72C180 35 300 125 490 88S830 30 1200 78V130H0Z" fill="url(#g)"/>
+<text x="600" y="105" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="3">BUILD WITH INTENT  /  IMPROVE WITH EVIDENCE</text>
+</svg>
