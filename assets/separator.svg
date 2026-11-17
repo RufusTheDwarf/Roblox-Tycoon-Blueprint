@@ -1,0 +1,44 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="54" viewBox="0 0 1200 54" role="img" aria-labelledby="title desc">
+  <title id="title">Roblox Tycoon Blueprint separator</title>
+  <desc id="desc">Animated red and blue technical divider with a moving light.</desc>
+
+  <defs>
+    <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E2231A" stop-opacity="0"/>
+      <stop offset="18%" stop-color="#E2231A"/>
+      <stop offset="50%" stop-color="#AEB8C2"/>
+      <stop offset="82%" stop-color="#1685E8"/>
+      <stop offset="100%" stop-color="#1685E8" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="lightGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <path d="M0 27 H1200" stroke="#393B3D" stroke-width="1" opacity=".65"/>
+  <path d="M0 27 H1200" stroke="url(#lineGradient)" stroke-width="2.5" stroke-linecap="round">
+    <animate attributeName="stroke-dasharray" values="0 1200;1200 0;1200 0" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+
+  <path d="M20 14 H160 M1040 40 H1180" stroke="#393B3D" stroke-width="1"/>
+  <path d="M20 14 H90" stroke="#E2231A" stroke-width="2"/>
+  <path d="M1110 40 H1180" stroke="#1685E8" stroke-width="2"/>
+
+  <circle cx="0" cy="27" r="4" fill="#E2231A" filter="url(#lightGlow)">
+    <animate attributeName="cx" values="0;1200;0" dur="6s" repeatCount="indefinite"/>
+  </circle>
+
+  <path d="M590 19 L600 27 L590 35 L610 35 L600 27 L610 19 Z"
+    fill="#E5E5E5" opacity=".8">
+    <animateTransform attributeName="transform" type="rotate" from="0 600 27" to="360 600 27" dur="12s" repeatCount="indefinite"/>
+  </path>
+
+  <circle cx="40" cy="27" r="2" fill="#E2231A"/>
+  <circle cx="1160" cy="27" r="2" fill="#1685E8"/>
+</svg>
