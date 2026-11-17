@@ -1,11 +1,302 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="300" viewBox="0 0 1600 300" role="img" aria-labelledby="title desc">
-<title id="title">Roblox Tycoon Blueprint</title><desc id="desc">A classic block-inspired red, blue and charcoal banner for a Roblox tycoon design knowledge base.</desc>
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#17191C"/><stop offset="1" stop-color="#34383D"/></linearGradient><linearGradient id="red" x1="0" x2="1"><stop stop-color="#E2231A"/><stop offset="1" stop-color="#B71916"/></linearGradient></defs>
-<rect width="1600" height="300" rx="22" fill="url(#bg)"/>
-<g opacity=".12" fill="none" stroke="#fff" stroke-width="2"><path d="M0 60H1600M0 120H1600M0 180H1600M0 240H1600"/><path d="M200 0V300M400 0V300M600 0V300M800 0V300M1000 0V300M1200 0V300M1400 0V300"/></g>
-<path d="M0 252L1600 128V300H0Z" fill="#0055BF" opacity=".82"/><path d="M0 276L1600 152V190L0 300Z" fill="url(#red)"/>
-<g transform="translate(88 76)"><rect width="124" height="124" rx="18" fill="#E2231A"/><path d="M36 36H88V88H36Z" fill="#fff" transform="rotate(12 62 62)"/></g>
-<text x="252" y="127" fill="#fff" font-family="Arial,sans-serif" font-size="60" font-weight="800" letter-spacing="2">ROBLOX TYCOON</text>
-<text x="255" y="181" fill="#E5E5E5" font-family="Arial,sans-serif" font-size="38" font-weight="700" letter-spacing="7">BLUEPRINT</text>
-<text x="1510" y="80" text-anchor="end" fill="#fff" opacity=".8" font-family="Arial,sans-serif" font-size="15" letter-spacing="4">DESIGN • BUILD • TEST • IMPROVE</text>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1600"
+     height="360"
+     viewBox="0 0 1600 360"
+     role="img"
+     aria-labelledby="title desc">
+
+  <title id="title">Roblox Tycoon Blueprint</title>
+  <desc id="desc">Animated technical banner featuring red and blue construction blocks, a tycoon production machine and the Roblox Tycoon Blueprint title.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111418"/>
+      <stop offset="55%" stop-color="#22272D"/>
+      <stop offset="100%" stop-color="#343B43"/>
+    </linearGradient>
+
+    <linearGradient id="redGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF4037"/>
+      <stop offset="100%" stop-color="#B71916"/>
+    </linearGradient>
+
+    <linearGradient id="blueGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1687FF"/>
+      <stop offset="100%" stop-color="#00458F"/>
+    </linearGradient>
+
+    <linearGradient id="lightSweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity=".13"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glowRed" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glowBlue" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48"
+            fill="none"
+            stroke="#FFFFFF"
+            stroke-opacity=".055"
+            stroke-width="1"/>
+    </pattern>
+
+    <clipPath id="bannerClip">
+      <rect width="1600" height="360" rx="22"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#bannerClip)">
+
+    <!-- Background -->
+    <rect width="1600" height="360" fill="url(#background)"/>
+    <rect width="1600" height="360" fill="url(#grid)"/>
+
+    <!-- Blueprint construction lines -->
+    <g fill="none" stroke="#8FA2B5" stroke-opacity=".15" stroke-width="1.5">
+      <path d="M0 290L1600 160"/>
+      <path d="M0 320L1600 190"/>
+      <path d="M0 350L1600 220"/>
+      <path d="M1050 0V360"/>
+      <path d="M1150 0V360"/>
+      <path d="M1250 0V360"/>
+      <path d="M1350 0V360"/>
+      <path d="M1450 0V360"/>
+    </g>
+
+    <!-- Animated light sweep -->
+    <rect x="-500" y="0" width="500" height="360"
+          fill="url(#lightSweep)"
+          opacity=".7">
+      <animate attributeName="x"
+               values="-500;1700"
+               dur="9s"
+               repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Red light -->
+    <circle cx="1300" cy="110" r="90"
+            fill="#E2231A"
+            opacity=".12"
+            filter="url(#glowRed)">
+      <animate attributeName="opacity"
+               values=".07;.2;.07"
+               dur="4s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Blue light -->
+    <circle cx="1500" cy="280" r="100"
+            fill="#0066CC"
+            opacity=".16"
+            filter="url(#glowBlue)">
+      <animate attributeName="opacity"
+               values=".08;.22;.08"
+               dur="5s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Left decorative structure -->
+    <g opacity=".9">
+      <path d="M-40 260L170 220L170 340L-40 360Z"
+            fill="#0055AA"
+            opacity=".5"/>
+      <path d="M-40 285L170 245"
+            stroke="#1687FF"
+            stroke-width="5"
+            opacity=".8"/>
+      <path d="M0 310L170 278"
+            stroke="#FFFFFF"
+            stroke-opacity=".15"
+            stroke-width="2"/>
+    </g>
+
+    <!-- Floating construction blocks -->
+    <g>
+      <g transform="translate(1190 65)">
+        <animateTransform attributeName="transform"
+                          type="translate"
+                          values="1190 65;1190 52;1190 65"
+                          dur="5s"
+                          repeatCount="indefinite"/>
+        <path d="M0 22L48 0L96 22L48 44Z" fill="#1687FF"/>
+        <path d="M0 22V76L48 100V44Z" fill="#0055AA"/>
+        <path d="M48 44V100L96 76V22Z" fill="#003D7A"/>
+        <path d="M48 0V44" stroke="#FFFFFF" stroke-opacity=".3"/>
+      </g>
+
+      <g transform="translate(1390 155)">
+        <animateTransform attributeName="transform"
+                          type="translate"
+                          values="1390 155;1390 169;1390 155"
+                          dur="6s"
+                          repeatCount="indefinite"/>
+        <path d="M0 18L38 0L76 18L38 36Z" fill="#FF4037"/>
+        <path d="M0 18V62L38 82V36Z" fill="#B71916"/>
+        <path d="M38 36V82L76 62V18Z" fill="#8E1713"/>
+      </g>
+
+      <g transform="translate(1080 220)" opacity=".65">
+        <path d="M0 15L30 0L60 15L30 30Z" fill="#E2231A"/>
+        <path d="M0 15V50L30 65V30Z" fill="#B71916"/>
+        <path d="M30 30V65L60 50V15Z" fill="#8E1713"/>
+      </g>
+    </g>
+
+    <!-- Production machine silhouette -->
+    <g transform="translate(1300 235)" opacity=".9">
+      <path d="M0 35L95 0L190 35V105L95 140L0 105Z"
+            fill="#1A2027"
+            stroke="#6D7A87"
+            stroke-opacity=".5"
+            stroke-width="2"/>
+
+      <path d="M0 35L95 70L190 35"
+            fill="none"
+            stroke="#8C9AA8"
+            stroke-opacity=".5"
+            stroke-width="2"/>
+
+      <path d="M95 70V140"
+            stroke="#8C9AA8"
+            stroke-opacity=".35"
+            stroke-width="2"/>
+
+      <rect x="54" y="27" width="82" height="42" rx="5"
+            fill="#E2231A"
+            opacity=".9"/>
+
+      <circle cx="95" cy="48" r="10" fill="#FFFFFF">
+        <animate attributeName="opacity"
+                 values=".5;1;.5"
+                 dur="2s"
+                 repeatCount="indefinite"/>
+      </circle>
+
+      <path d="M95 70V95"
+            stroke="#1687FF"
+            stroke-width="5"
+            stroke-linecap="round"/>
+
+      <circle cx="95" cy="105" r="8" fill="#1687FF">
+        <animate attributeName="r"
+                 values="6;10;6"
+                 dur="2s"
+                 repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Conveyor line -->
+    <g transform="translate(1110 330)" opacity=".8">
+      <path d="M0 0L420 -70"
+            stroke="#1687FF"
+            stroke-width="8"
+            stroke-linecap="round"/>
+      <path d="M0 0L420 -70"
+            stroke="#FFFFFF"
+            stroke-opacity=".5"
+            stroke-width="2"
+            stroke-dasharray="12 18">
+        <animate attributeName="stroke-dashoffset"
+                 from="0"
+                 to="-60"
+                 dur="2s"
+                 repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- Main title area -->
+    <g transform="translate(105 0)">
+
+      <!-- Small project label -->
+      <rect x="0" y="65" width="218" height="30" rx="6"
+            fill="#E2231A"/>
+      <text x="109" y="85"
+            fill="#FFFFFF"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="13"
+            font-weight="700"
+            letter-spacing="3"
+            text-anchor="middle">
+        THE CREATOR'S WORKSHOP
+      </text>
+
+      <!-- Main title -->
+      <text x="0" y="168"
+            fill="#FFFFFF"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="66"
+            font-weight="900"
+            letter-spacing="1">
+        ROBLOX TYCOON
+      </text>
+
+      <!-- Blueprint title -->
+      <text x="3" y="222"
+            fill="#1687FF"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="43"
+            font-weight="800"
+            letter-spacing="9">
+        BLUEPRINT
+      </text>
+
+      <!-- Animated underline -->
+      <rect x="3" y="242" width="390" height="4" rx="2"
+            fill="#E2231A">
+        <animate attributeName="width"
+                 values="100;390;100"
+                 dur="5s"
+                 repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Tagline -->
+      <text x="3" y="282"
+            fill="#D5DCE3"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="17"
+            font-weight="600"
+            letter-spacing="3">
+        DESIGN  /  BUILD  /  TEST  /  IMPROVE
+      </text>
+
+    </g>
+
+    <!-- Top right status -->
+    <g transform="translate(1370 35)">
+      <circle cx="0" cy="0" r="5" fill="#36D399">
+        <animate attributeName="opacity"
+                 values="1;.35;1"
+                 dur="2s"
+                 repeatCount="indefinite"/>
+      </circle>
+      <text x="15" y="5"
+            fill="#D5DCE3"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="12"
+            letter-spacing="2">
+        BUILD SYSTEMS
+      </text>
+    </g>
+
+    <!-- Bottom accent -->
+    <rect x="0" y="350" width="1600" height="10" fill="#E2231A"/>
+    <rect x="0" y="350" width="540" height="10" fill="#0055AA"/>
+
+  </g>
 </svg>
