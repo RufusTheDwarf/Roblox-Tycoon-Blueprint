@@ -4,6 +4,7 @@
 
 ### Retention Without Pressure
 
+<img src="../assets/retention-without-pressure-title.svg" alt="Retention Without Pressure - animated red and blue section title" width="100%">
 ![Roblox](https://img.shields.io/badge/PLATFORM-ROBLOX-222222?style=flat&logo=roblox&logoColor=white)
 ![Luau](https://img.shields.io/badge/LANGUAGE-LUAU-0055BF?style=flat&logo=lua&logoColor=white)
 ![Guide](https://img.shields.io/badge/TYPE-PROJECT%20GUIDE-E2231A?style=flat)
