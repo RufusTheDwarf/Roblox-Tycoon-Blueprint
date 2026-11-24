@@ -2,14 +2,12 @@
 
 <img src="../assets/header.svg" alt="Roblox Tycoon Blueprint - classic red and blue project banner" width="100%">
 
-### Retention Without Pressure
-
-<img src="../assets/retention-without-pressure-title.svg" alt="Retention Without Pressure - animated red and blue section title" width="100%">
-
 ![Roblox](https://img.shields.io/badge/PLATFORM-ROBLOX-222222?style=flat&logo=roblox&logoColor=white)
 ![Luau](https://img.shields.io/badge/LANGUAGE-LUAU-0055BF?style=flat&logo=lua&logoColor=white)
 ![Guide](https://img.shields.io/badge/TYPE-PROJECT%20GUIDE-E2231A?style=flat)
 ![Path](https://img.shields.io/badge/FILE-DOCS-5B6570?style=flat)
+
+<img src="../assets/retention-without-pressure-title.svg" alt="Retention Without Pressure - animated red and blue section title" width="100%">
 
 </div>
 
