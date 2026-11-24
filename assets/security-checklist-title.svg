@@ -1,1 +1,169 @@
 
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
+  <title id="title">Security Checklist</title>
+  <desc id="desc">Animated red and blue security banner featuring a shield, server architecture, network connections and validation indicators.</desc>
+
+  <defs>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2231A">
+        <animate attributeName="stop-color" values="#E2231A;#FF655B;#E2231A" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#1685E8">
+        <animate attributeName="stop-color" values="#1685E8;#65BCFF;#1685E8" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5145"/>
+      <stop offset="100%" stop-color="#A91412"/>
+    </linearGradient>
+
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#55B5FF"/>
+      <stop offset="100%" stop-color="#0055AA"/>
+    </linearGradient>
+
+    <linearGradient id="panelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#283746"/>
+      <stop offset="100%" stop-color="#111820"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="230" rx="18" fill="#10151D"/>
+
+  <g opacity="0.14" stroke="#8194A9" stroke-width="1">
+    <path d="M0 45H1200M0 90H1200M0 135H1200M0 180H1200"/>
+    <path d="M100 0V230M200 0V230M300 0V230M400 0V230M500 0V230M600 0V230M700 0V230M800 0V230M900 0V230M1000 0V230M1100 0V230"/>
+  </g>
+
+  <!-- Left security shield -->
+  <g transform="translate(78 36)">
+    <path d="M78 0L145 24V75C145 117 118 143 78 160C38 143 11 117 11 75V24Z"
+          fill="#321C20" stroke="#E2231A" stroke-width="2.5"/>
+
+    <path d="M78 13L132 32V74C132 108 111 130 78 145C45 130 24 108 24 74V32Z"
+          fill="url(#shieldGradient)" opacity="0.95"/>
+
+    <path d="M78 13L132 32V74C132 108 111 130 78 145C45 130 24 108 24 74V32Z"
+          fill="none" stroke="#FF8A82" stroke-opacity="0.6" stroke-width="1.5"/>
+
+    <!-- Shield check -->
+    <path d="M49 79L68 98L109 55"
+          fill="none" stroke="#FFFFFF" stroke-width="9"
+          stroke-linecap="round" stroke-linejoin="round"
+          filter="url(#softGlow)">
+      <animate attributeName="stroke-dasharray" values="0 100;100 0;100 0" dur="4s" repeatCount="indefinite"/>
+    </path>
+
+    <circle cx="78" cy="78" r="88" fill="none" stroke="#E2231A" stroke-opacity="0.18" stroke-width="1">
+      <animate attributeName="r" values="75;94;75" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.7;0.1" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Main title -->
+  <g text-anchor="middle" font-family="Arial, Helvetica, sans-serif">
+    <text x="600" y="91" font-size="48" font-weight="900" letter-spacing="1.5" fill="url(#titleGradient)">
+      SECURITY
+    </text>
+
+    <text x="600" y="139" font-size="38" font-weight="800" letter-spacing="3" fill="#FFFFFF">
+      CHECKLIST
+    </text>
+
+    <text x="600" y="168" font-size="13" letter-spacing="3" fill="#A9B8C8">
+      VALIDATE · PROTECT · VERIFY
+    </text>
+  </g>
+
+  <!-- Animated underline -->
+  <g filter="url(#glow)">
+    <rect x="390" y="181" width="420" height="3" rx="1.5" fill="#283746"/>
+    <rect x="390" y="181" width="95" height="3" rx="1.5" fill="#E2231A">
+      <animate attributeName="x" values="390;715;390" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="95;125;95" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Right server security panel -->
+  <g transform="translate(972 37)">
+    <rect x="0" y="0" width="170" height="151" rx="12"
+          fill="url(#panelGradient)" stroke="#3C4B5D" stroke-width="1.5"/>
+
+    <rect x="13" y="13" width="144" height="36" rx="7"
+          fill="#172A3B" stroke="#1685E8" stroke-width="1.3"/>
+
+    <circle cx="28" cy="31" r="5" fill="#1685E8">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+    <text x="43" y="35" fill="#DCE6F1" font-size="11"
+          font-family="Arial, sans-serif" font-weight="bold">SERVER AUTHORITY</text>
+
+    <g transform="translate(15 62)" font-family="Arial, sans-serif">
+      <rect x="0" y="0" width="140" height="23" rx="5" fill="#202D39"/>
+      <circle cx="12" cy="11.5" r="3.5" fill="#E2231A"/>
+      <text x="23" y="15" fill="#E6EDF5" font-size="9">Validate requests</text>
+      <path d="M127 8L131 12L138 4" fill="none" stroke="#55B5FF" stroke-width="1.5"/>
+
+      <rect x="0" y="30" width="140" height="23" rx="5" fill="#202D39"/>
+      <circle cx="12" cy="41.5" r="3.5" fill="#1685E8"/>
+      <text x="23" y="45" fill="#E6EDF5" font-size="9">Secure transactions</text>
+      <path d="M127 38L131 42L138 34" fill="none" stroke="#55B5FF" stroke-width="1.5"/>
+
+      <rect x="0" y="60" width="140" height="23" rx="5" fill="#202D39"/>
+      <circle cx="12" cy="71.5" r="3.5" fill="#E2231A"/>
+      <text x="23" y="75" fill="#E6EDF5" font-size="9">Protect player data</text>
+      <path d="M127 68L131 72L138 64" fill="none" stroke="#55B5FF" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- Network connection lines -->
+  <g fill="none" stroke-width="1.5" opacity="0.65">
+    <path d="M245 64H340" stroke="#E2231A">
+      <animate attributeName="stroke-dasharray" values="0 95;95 0" dur="3.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M860 160H950" stroke="#1685E8">
+      <animate attributeName="stroke-dasharray" values="0 90;90 0" dur="3.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Floating security nodes -->
+  <g filter="url(#softGlow)">
+    <circle cx="310" cy="49" r="3" fill="#E2231A">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="890" cy="57" r="3" fill="#1685E8">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="190" r="2.5" fill="#55B5FF">
+      <animate attributeName="cy" values="190;180;190" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Decorative corner marks -->
+  <g fill="none" stroke-width="2" opacity="0.75">
+    <path d="M35 24H55M35 24V44" stroke="#E2231A"/>
+    <path d="M1165 186H1145M1165 186V166" stroke="#1685E8"/>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="228" rx="17"
+        fill="none" stroke="#526477" stroke-opacity="0.45"/>
+</svg>
