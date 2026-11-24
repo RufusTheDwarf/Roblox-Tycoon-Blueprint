@@ -1,0 +1,103 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+  <title id="title">Analytics and Data</title>
+  <desc id="desc">Animated red and blue title for section 18 of Roblox Tycoon Blueprint, representing analytics, player behavior and data.</desc>
+
+  <defs>
+    <linearGradient id="analyticsGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2231A">
+        <animate attributeName="stop-color" values="#E2231A;#FF5147;#E2231A" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="48%" stop-color="#E5E5E5"/>
+      <stop offset="100%" stop-color="#1685E8">
+        <animate attributeName="stop-color" values="#1685E8;#57B7FF;#1685E8" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="analyticsShine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="48%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="52%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="analyticsGlow" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="analyticsTextClip">
+      <text x="600" y="91" text-anchor="middle"
+            font-family="Arial, Helvetica, sans-serif"
+            font-size="53" font-weight="900" letter-spacing="3">
+        ANALYTICS &amp; DATA
+      </text>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="190" rx="12" fill="#101820"/>
+
+  <g opacity="0.13" stroke="#1685E8" stroke-width="1">
+    <path d="M0 35H1200 M0 75H1200 M0 115H1200 M0 155H1200"/>
+    <path d="M100 0V190 M200 0V190 M300 0V190 M400 0V190 M500 0V190 M600 0V190 M700 0V190 M800 0V190 M900 0V190 M1000 0V190 M1100 0V190"/>
+  </g>
+
+  <g fill="none" stroke="#1685E8" opacity="0.65">
+    <path d="M45 38H185L205 58H270" stroke-width="1.5"/>
+    <path d="M930 130H1010L1030 110H1155" stroke-width="1.5"/>
+    <circle cx="45" cy="38" r="3" fill="#1685E8"/>
+    <circle cx="270" cy="58" r="3" fill="#1685E8"/>
+    <circle cx="930" cy="130" r="3" fill="#1685E8"/>
+    <circle cx="1155" cy="110" r="3" fill="#1685E8"/>
+  </g>
+
+  <g transform="translate(68 77)" fill="none" stroke="#E2231A" stroke-width="2.5" opacity="0.9">
+    <path d="M0 43V15H18V43 M18 43V0H36V43 M36 43V24H54V43 M54 43V9H72V43"/>
+    <path d="M-5 44H80" stroke="#E5E5E5" opacity="0.7"/>
+  </g>
+
+  <g transform="translate(1050 42)" fill="none" stroke="#1685E8" stroke-width="2.5" opacity="0.9">
+    <path d="M0 58L23 39L43 47L68 15L91 25"/>
+    <path d="M0 70H100" stroke="#E5E5E5" opacity="0.6"/>
+    <circle cx="23" cy="39" r="3" fill="#1685E8"/>
+    <circle cx="43" cy="47" r="3" fill="#1685E8"/>
+    <circle cx="68" cy="15" r="3" fill="#1685E8"/>
+    <circle cx="91" cy="25" r="3" fill="#1685E8"/>
+  </g>
+
+  <text x="600" y="91" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="53" font-weight="900" letter-spacing="3"
+        fill="url(#analyticsGradient)" filter="url(#analyticsGlow)">
+    ANALYTICS &amp; DATA
+  </text>
+
+  <g clip-path="url(#analyticsTextClip)" opacity="0.3">
+    <rect x="-300" y="25" width="180" height="85" fill="url(#analyticsShine)">
+      <animate attributeName="x" from="-300" to="1320" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <text x="600" y="126" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="15" font-weight="700" letter-spacing="4"
+        fill="#E5E5E5">
+    SECTION 18 / PLAYER BEHAVIOR &amp; MEASUREMENT
+  </text>
+
+  <rect x="390" y="148" width="420" height="2" rx="1" fill="#393B3D"/>
+  <rect x="390" y="148" width="105" height="2" rx="1" fill="#E2231A">
+    <animate attributeName="x" values="390;705;390" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="495" y="148" width="210" height="2" rx="1" fill="#1685E8" opacity="0.8"/>
+
+  <text x="600" y="174" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="9" letter-spacing="3"
+        fill="#7F8C98">
+    ROBLOX TYCOON BLUEPRINT
+  </text>
+</svg>
