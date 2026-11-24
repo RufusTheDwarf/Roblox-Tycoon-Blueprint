@@ -1,0 +1,138 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
+  <title id="title">Retention Without Pressure</title>
+  <desc id="desc">Animated red and blue title for the Retention Without Pressure section of Roblox Tycoon Blueprint, featuring a progression path, reward icons and a returning player symbol.</desc>
+
+  <defs>
+    <linearGradient id="retentionTitleGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E2231A">
+        <animate attributeName="stop-color" values="#E2231A;#FF5148;#E2231A" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#1685E8"/>
+      <stop offset="100%" stop-color="#0055AA">
+        <animate attributeName="stop-color" values="#0055AA;#1685E8;#0055AA" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="retentionPanelGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#20262D"/>
+      <stop offset="100%" stop-color="#101820"/>
+    </linearGradient>
+
+    <filter id="retentionGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="retentionGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#FFFFFF" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect x="10" y="10" width="1180" height="210" rx="20" fill="url(#retentionPanelGradient)" stroke="#393B3D" stroke-width="2"/>
+  <rect x="10" y="10" width="1180" height="210" rx="20" fill="url(#retentionGrid)"/>
+
+  <path d="M28 32H1172" stroke="url(#retentionTitleGradient)" stroke-width="3" opacity=".9"/>
+  <path d="M28 198H1172" stroke="url(#retentionTitleGradient)" stroke-width="3" opacity=".9"/>
+
+  <g opacity=".12" fill="none" stroke="#1685E8" stroke-width="2">
+    <circle cx="1040" cy="105" r="88"/>
+    <circle cx="1040" cy="105" r="65"/>
+    <circle cx="1040" cy="105" r="42"/>
+  </g>
+
+  <!-- Return and progression icon -->
+  <g transform="translate(62 58)">
+    <rect x="0" y="0" width="92" height="92" rx="14" fill="#252D35" stroke="#E2231A" stroke-width="3"/>
+
+    <path d="M25 45A22 22 0 1 1 30 68" fill="none" stroke="#1685E8" stroke-width="5" stroke-linecap="round"/>
+    <path d="M20 61L30 68L31 55" fill="none" stroke="#1685E8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <circle cx="47" cy="45" r="13" fill="#202B35" stroke="#E2231A" stroke-width="3"/>
+    <path d="M47 37V45L54 49" fill="none" stroke="#E5E5E5" stroke-width="3" stroke-linecap="round"/>
+
+    <path d="M15 79H77" stroke="#E5E5E5" stroke-opacity=".35" stroke-width="3"/>
+    <circle cx="70" cy="22" r="5" fill="#1685E8" filter="url(#retentionGlow)">
+      <animate attributeName="opacity" values=".3;1;.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Main title -->
+  <g transform="translate(185 62)">
+    <text x="0" y="20" fill="#E5E5E5" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="4">ROBLOX TYCOON BLUEPRINT</text>
+
+    <text x="0" y="78" fill="url(#retentionTitleGradient)" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="900" letter-spacing="1">
+      RETENTION
+    </text>
+
+    <text x="0" y="125" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" letter-spacing="3">
+      WITHOUT PRESSURE
+    </text>
+
+    <rect x="0" y="145" width="310" height="3" rx="2" fill="url(#retentionTitleGradient)"/>
+    <text x="0" y="169" fill="#AAB5C0" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2">
+      RETURN // PROGRESS // ENJOY
+    </text>
+  </g>
+
+  <!-- Progression and reward panel -->
+  <g transform="translate(790 64)">
+    <rect x="0" y="0" width="270" height="78" rx="12" fill="#151D25" stroke="#0055AA" stroke-width="2"/>
+
+    <path d="M24 51L83 36L142 45L207 20L246 27" fill="none" stroke="#1685E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+
+    <g fill="#202B35" stroke-width="3">
+      <circle cx="24" cy="51" r="9" stroke="#E2231A"/>
+      <circle cx="83" cy="36" r="9" stroke="#1685E8"/>
+      <circle cx="142" cy="45" r="9" stroke="#E2231A"/>
+      <circle cx="207" cy="20" r="9" stroke="#1685E8"/>
+      <circle cx="246" cy="27" r="9" stroke="#E2231A"/>
+    </g>
+
+    <g fill="#E5E5E5">
+      <circle cx="24" cy="51" r="3"/>
+      <circle cx="83" cy="36" r="3"/>
+      <circle cx="142" cy="45" r="3"/>
+      <circle cx="207" cy="20" r="3"/>
+      <circle cx="246" cy="27" r="3"/>
+    </g>
+
+    <circle cx="207" cy="20" r="15" fill="none" stroke="#1685E8" stroke-width="2" opacity=".5">
+      <animate attributeName="r" values="12;20;12" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".7;.1;.7" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <path d="M24 67H246" stroke="#5B6570" stroke-width="2" stroke-dasharray="4 6"/>
+  </g>
+
+  <!-- Calendar and reward symbol -->
+  <g transform="translate(1080 72)" fill="none" stroke="#1685E8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="-19" y="5" width="38" height="48" rx="6" fill="#202B35" stroke="#1685E8"/>
+    <path d="M-19 18H19"/>
+    <path d="M-9 0V10M9 0V10"/>
+    <path d="M-9 29L-3 35L9 24" stroke="#E2231A" stroke-width="4"/>
+    <path d="M-12 62H12" stroke="#E5E5E5" opacity=".6"/>
+  </g>
+
+  <!-- Ambient animated details -->
+  <g fill="#E2231A">
+    <circle cx="730" cy="42" r="3">
+      <animate attributeName="opacity" values=".2;1;.2" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="755" cy="42" r="3">
+      <animate attributeName="opacity" values="1;.2;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g fill="#1685E8">
+    <circle cx="730" cy="185" r="3">
+      <animate attributeName="opacity" values="1;.2;1" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="755" cy="185" r="3">
+      <animate attributeName="opacity" values=".2;1;.2" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
