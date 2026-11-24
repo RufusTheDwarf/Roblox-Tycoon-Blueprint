@@ -1,0 +1,101 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+  <title id="title">Quests and Achievements</title>
+  <desc id="desc">Animated red and blue title for section 11 of Roblox Tycoon Blueprint, focused on quests, challenges and player achievements.</desc>
+
+  <defs>
+    <linearGradient id="questGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2231A"/>
+      <stop offset="48%" stop-color="#F04435"/>
+      <stop offset="52%" stop-color="#1685E8"/>
+      <stop offset="100%" stop-color="#0055AA"/>
+    </linearGradient>
+
+    <linearGradient id="questLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2231A" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#E2231A"/>
+      <stop offset="75%" stop-color="#1685E8"/>
+      <stop offset="100%" stop-color="#1685E8" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="questGlow" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="questGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#5B6570" stroke-opacity=".18" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="190" rx="12" fill="#151719"/>
+  <rect width="1200" height="190" rx="12" fill="url(#questGrid)"/>
+
+  <g fill="none" stroke="#5B6570" stroke-width="1" opacity=".4">
+    <path d="M28 28H150L170 48H240"/>
+    <path d="M1172 28H1050L1030 48H960"/>
+    <path d="M28 162H150L170 142H240"/>
+    <path d="M1172 162H1050L1030 142H960"/>
+  </g>
+
+  <g transform="translate(600 0)" text-anchor="middle">
+    <text
+      x="0"
+      y="83"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="43"
+      font-weight="900"
+      letter-spacing="1.5"
+      fill="url(#questGradient)"
+      filter="url(#questGlow)">
+      QUESTS &amp; ACHIEVEMENTS
+    </text>
+
+    <text
+      x="0"
+      y="117"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="14"
+      font-weight="700"
+      letter-spacing="4"
+      fill="#E5E5E5">
+      SECTION 11 / GOALS &amp; RECOGNITION
+    </text>
+  </g>
+
+  <g fill="none" stroke-width="2" opacity=".8">
+    <path d="M105 72L125 52L145 72V112L125 132L105 112Z" stroke="#E2231A"/>
+    <path d="M1055 72L1075 52L1095 72V112L1075 132L1055 112Z" stroke="#1685E8"/>
+  </g>
+
+  <g fill="none" stroke="#E2231A" stroke-width="2">
+    <path d="M116 92L123 99L136 84"/>
+  </g>
+
+  <g fill="none" stroke="#1685E8" stroke-width="2">
+    <path d="M1066 92L1073 99L1086 84"/>
+  </g>
+
+  <g fill="#5B6570" opacity=".65">
+    <circle cx="180" cy="48" r="3"/>
+    <circle cx="1020" cy="48" r="3"/>
+    <circle cx="180" cy="142" r="3"/>
+    <circle cx="1020" cy="142" r="3"/>
+  </g>
+
+  <rect x="250" y="143" width="700" height="2" rx="1" fill="#393B3D"/>
+
+  <rect x="250" y="143" width="700" height="2" rx="1" fill="url(#questLine)">
+    <animate attributeName="opacity" values=".4;1;.4" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="250" y="143" width="90" height="2" rx="1" fill="#E2231A">
+    <animate attributeName="x" values="250;860;250" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <path d="M0 8H1200" stroke="#E2231A" stroke-width="2" opacity=".8"/>
+  <path d="M0 182H1200" stroke="#1685E8" stroke-width="2" opacity=".8"/>
+</svg>
