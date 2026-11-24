@@ -1,0 +1,125 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
+  <title id="title">Machines and Production</title>
+  <desc id="desc">Animated red and blue title for the Machines and Production section of Roblox Tycoon Blueprint, featuring a stylized production conveyor and moving resources.</desc>
+
+  <defs>
+    <linearGradient id="machineTitleGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E2231A">
+        <animate attributeName="stop-color" values="#E2231A;#FF5148;#E2231A" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#1685E8"/>
+      <stop offset="100%" stop-color="#0055AA">
+        <animate attributeName="stop-color" values="#0055AA;#1685E8;#0055AA" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="machinePanelGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#20262D"/>
+      <stop offset="100%" stop-color="#101820"/>
+    </linearGradient>
+
+    <filter id="machineGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="machineGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#FFFFFF" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect x="10" y="10" width="1180" height="210" rx="20" fill="url(#machinePanelGradient)" stroke="#393B3D" stroke-width="2"/>
+  <rect x="10" y="10" width="1180" height="210" rx="20" fill="url(#machineGrid)"/>
+
+  <path d="M28 32H1172" stroke="url(#machineTitleGradient)" stroke-width="3" opacity=".9"/>
+  <path d="M28 198H1172" stroke="url(#machineTitleGradient)" stroke-width="3" opacity=".9"/>
+
+  <g opacity=".12" fill="none" stroke="#1685E8" stroke-width="2">
+    <circle cx="1040" cy="105" r="88"/>
+    <circle cx="1040" cy="105" r="65"/>
+    <circle cx="1040" cy="105" r="42"/>
+  </g>
+
+  <g transform="translate(62 58)">
+    <rect x="0" y="0" width="92" height="92" rx="14" fill="#252D35" stroke="#E2231A" stroke-width="3"/>
+    <path d="M18 24H74V44H18Z" fill="#E2231A" opacity=".9"/>
+    <path d="M27 44V61H65V44" fill="none" stroke="#E5E5E5" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M46 61V72" stroke="#1685E8" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="46" cy="76" r="5" fill="#1685E8" filter="url(#machineGlow)">
+      <animate attributeName="cy" values="76;83;76" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;.25;1" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M10 82H82" stroke="#E5E5E5" stroke-opacity=".35" stroke-width="3"/>
+  </g>
+
+  <g transform="translate(185 62)">
+    <text x="0" y="20" fill="#E5E5E5" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="4">ROBLOX TYCOON BLUEPRINT</text>
+
+    <text x="0" y="78" fill="url(#machineTitleGradient)" font-family="Arial, Helvetica, sans-serif" font-size="47" font-weight="900" letter-spacing="1">
+      MACHINES
+    </text>
+
+    <text x="0" y="125" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" letter-spacing="5">
+      AND PRODUCTION
+    </text>
+
+    <rect x="0" y="145" width="310" height="3" rx="2" fill="url(#machineTitleGradient)"/>
+    <text x="0" y="169" fill="#AAB5C0" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2">
+      DESIGN // AUTOMATE // OPTIMIZE
+    </text>
+  </g>
+
+  <g transform="translate(790 64)">
+    <rect x="0" y="0" width="270" height="78" rx="12" fill="#151D25" stroke="#0055AA" stroke-width="2"/>
+
+    <path d="M16 48H252" stroke="#5B6570" stroke-width="8" stroke-linecap="round"/>
+    <path d="M16 48H252" stroke="#1685E8" stroke-width="2" stroke-dasharray="12 10">
+      <animate attributeName="stroke-dashoffset" values="0;-44" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+
+    <g>
+      <rect x="32" y="30" width="22" height="18" rx="4" fill="#E2231A"/>
+      <rect x="112" y="30" width="22" height="18" rx="4" fill="#1685E8"/>
+      <rect x="192" y="30" width="22" height="18" rx="4" fill="#E2231A"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;10 0;0 0" dur="3s" repeatCount="indefinite"/>
+    </g>
+
+    <g fill="#E5E5E5">
+      <circle cx="30" cy="66" r="5"/>
+      <circle cx="80" cy="66" r="5"/>
+      <circle cx="130" cy="66" r="5"/>
+      <circle cx="180" cy="66" r="5"/>
+      <circle cx="230" cy="66" r="5"/>
+    </g>
+  </g>
+
+  <g transform="translate(1080 72)" fill="none" stroke="#1685E8" stroke-width="3" stroke-linecap="round">
+    <path d="M0 0V68"/>
+    <path d="M-13 15H13"/>
+    <path d="M-13 50H13"/>
+    <circle cx="0" cy="33" r="12" fill="#202B35" stroke="#E2231A"/>
+    <path d="M-5 33H5M0 28V38" stroke="#E5E5E5"/>
+  </g>
+
+  <g fill="#E2231A">
+    <circle cx="730" cy="42" r="3">
+      <animate attributeName="opacity" values=".2;1;.2" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="755" cy="42" r="3">
+      <animate attributeName="opacity" values="1;.2;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g fill="#1685E8">
+    <circle cx="730" cy="185" r="3">
+      <animate attributeName="opacity" values="1;.2;1" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="755" cy="185" r="3">
+      <animate attributeName="opacity" values=".2;1;.2" dur="1.7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
