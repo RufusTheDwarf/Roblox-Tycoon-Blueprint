@@ -1,0 +1,178 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
+  <title id="title">Roblox Studio Structure</title>
+  <desc id="desc">Animated red and blue title featuring a Roblox Studio Explorer hierarchy, server and client architecture, and connected systems.</desc>
+
+  <defs>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2231A">
+        <animate attributeName="stop-color" values="#E2231A;#FF5145;#E2231A" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="52%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#1685E8">
+        <animate attributeName="stop-color" values="#1685E8;#55B5FF;#1685E8" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="panelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#252B35"/>
+      <stop offset="100%" stop-color="#111820"/>
+    </linearGradient>
+
+    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5145"/>
+      <stop offset="100%" stop-color="#A91412"/>
+    </linearGradient>
+
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#55B5FF"/>
+      <stop offset="100%" stop-color="#0055AA"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="230" rx="18" fill="#10151D"/>
+
+  <g opacity="0.16" stroke="#7E91A8" stroke-width="1">
+    <path d="M0 45H1200M0 90H1200M0 135H1200M0 180H1200"/>
+    <path d="M100 0V230M200 0V230M300 0V230M400 0V230M500 0V230M600 0V230M700 0V230M800 0V230M900 0V230M1000 0V230M1100 0V230"/>
+  </g>
+
+  <circle cx="80" cy="35" r="3" fill="#E2231A">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1120" cy="190" r="3" fill="#1685E8">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Left: Explorer hierarchy -->
+  <g transform="translate(55 42)">
+    <rect x="0" y="0" width="190" height="145" rx="12" fill="url(#panelGradient)" stroke="#3C4B5D" stroke-width="1.5"/>
+
+    <rect x="0" y="0" width="190" height="27" rx="12" fill="#283442"/>
+    <path d="M0 15V27H190V15" fill="#283442"/>
+
+    <circle cx="14" cy="13" r="4" fill="#E2231A"/>
+    <circle cx="28" cy="13" r="4" fill="#E5E5E5"/>
+    <circle cx="42" cy="13" r="4" fill="#1685E8"/>
+
+    <text x="57" y="17" fill="#DCE6F1" font-size="10" font-family="Arial, sans-serif" font-weight="bold">EXPLORER</text>
+
+    <g font-family="Arial, sans-serif" font-size="10" fill="#D8E1EB">
+      <text x="16" y="47">▾ Workspace</text>
+      <text x="33" y="65" fill="#F07870">▸ TycoonTemplate</text>
+      <text x="49" y="83" fill="#A9B8C8">Machines</text>
+      <text x="16" y="103">▾ ReplicatedStorage</text>
+      <text x="33" y="121" fill="#70BFFF">TycoonShared</text>
+    </g>
+
+    <g fill="none" stroke="#64778B" stroke-width="1.2">
+      <path d="M25 49V65H33"/>
+      <path d="M41 67V83H49"/>
+      <path d="M25 105V121H33"/>
+    </g>
+
+    <circle cx="8" cy="44" r="3" fill="#E2231A"/>
+    <circle cx="8" cy="100" r="3" fill="#1685E8"/>
+
+    <rect x="12" y="132" width="166" height="4" rx="2" fill="#364555"/>
+    <rect x="12" y="132" width="94" height="4" rx="2" fill="#1685E8">
+      <animate attributeName="width" values="55;130;55" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Main title -->
+  <g text-anchor="middle" font-family="Arial, Helvetica, sans-serif">
+    <text x="600" y="91" font-size="43" font-weight="900" letter-spacing="1.5" fill="url(#titleGradient)">
+      ROBLOX STUDIO
+    </text>
+
+    <text x="600" y="137" font-size="35" font-weight="800" letter-spacing="3" fill="#FFFFFF">
+      STRUCTURE
+    </text>
+
+    <text x="600" y="166" font-size="13" letter-spacing="3" fill="#A9B8C8">
+      BUILD A CLEAN · SCALABLE · SECURE PROJECT
+    </text>
+  </g>
+
+  <!-- Animated underline -->
+  <g filter="url(#glow)">
+    <rect x="395" y="178" width="410" height="3" rx="1.5" fill="#263849"/>
+    <rect x="395" y="178" width="90" height="3" rx="1.5" fill="#E2231A">
+      <animate attributeName="x" values="395;710;395" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="90;125;90" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Right: Client / Server architecture -->
+  <g transform="translate(960 42)">
+    <rect x="0" y="0" width="190" height="145" rx="12" fill="url(#panelGradient)" stroke="#3C4B5D" stroke-width="1.5"/>
+
+    <text x="95" y="19" text-anchor="middle" fill="#DCE6F1" font-size="10" font-family="Arial, sans-serif" font-weight="bold" letter-spacing="1.5">ARCHITECTURE</text>
+
+    <rect x="15" y="32" width="72" height="43" rx="7" fill="#172A3B" stroke="#1685E8" stroke-width="1.5"/>
+    <text x="51" y="49" text-anchor="middle" fill="#70BFFF" font-size="10" font-family="Arial, sans-serif" font-weight="bold">CLIENT</text>
+    <text x="51" y="63" text-anchor="middle" fill="#A9B8C8" font-size="8" font-family="Arial, sans-serif">LocalScripts</text>
+
+    <rect x="103" y="32" width="72" height="43" rx="7" fill="#321D20" stroke="#E2231A" stroke-width="1.5"/>
+    <text x="139" y="49" text-anchor="middle" fill="#FF766D" font-size="10" font-family="Arial, sans-serif" font-weight="bold">SERVER</text>
+    <text x="139" y="63" text-anchor="middle" fill="#C6B4B4" font-size="8" font-family="Arial, sans-serif">Scripts</text>
+
+    <path d="M88 53H102" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M96 48L102 53L96 58" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+
+    <circle cx="95" cy="53" r="4" fill="#FFFFFF" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <path d="M51 75V91H139V75" fill="none" stroke="#64778B" stroke-width="1.2"/>
+    <path d="M95 91V102" stroke="#64778B" stroke-width="1.2"/>
+
+    <rect x="45" y="102" width="100" height="27" rx="6" fill="#202E3D" stroke="#61768C" stroke-width="1"/>
+    <text x="95" y="119" text-anchor="middle" fill="#DCE6F1" font-size="9" font-family="Arial, sans-serif" font-weight="bold">SHARED SYSTEMS</text>
+
+    <circle cx="27" cy="138" r="2.5" fill="#E2231A"/>
+    <circle cx="37" cy="138" r="2.5" fill="#E5E5E5"/>
+    <circle cx="47" cy="138" r="2.5" fill="#1685E8"/>
+    <path d="M57 138H174" stroke="#3C4B5D" stroke-width="1"/>
+  </g>
+
+  <!-- Floating connection particles -->
+  <g fill="#1685E8" filter="url(#softGlow)">
+    <circle cx="290" cy="55" r="2.5">
+      <animate attributeName="cy" values="55;68;55" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="875" cy="160" r="2.5">
+      <animate attributeName="cy" values="160;145;160" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g fill="none" stroke-width="1.5" opacity="0.7">
+    <path d="M260 190H330" stroke="#E2231A">
+      <animate attributeName="stroke-dasharray" values="0 70;70 0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M870 35H940" stroke="#1685E8">
+      <animate attributeName="stroke-dasharray" values="0 70;70 0" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="228" rx="17" fill="none" stroke="#526477" stroke-opacity="0.45"/>
+</svg>
