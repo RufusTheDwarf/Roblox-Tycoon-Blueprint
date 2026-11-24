@@ -1,0 +1,116 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+  <title id="title">Live Operations and Updates</title>
+  <desc id="desc">Animated red and blue title for section 17 of Roblox Tycoon Blueprint.</desc>
+
+  <defs>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2231A">
+        <animate attributeName="stop-color" values="#E2231A;#FF6258;#E2231A" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#1685E8">
+        <animate attributeName="stop-color" values="#1685E8;#63B7FF;#1685E8" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2231A" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#E2231A"/>
+      <stop offset="75%" stop-color="#1685E8"/>
+      <stop offset="100%" stop-color="#1685E8" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glow" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="titleClip">
+      <rect x="80" y="30" width="1040" height="90"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="190" rx="12" fill="#111820"/>
+
+  <path d="M0 18 H1200 M0 172 H1200" stroke="#39434D" stroke-width="1" opacity=".55"/>
+  <path d="M28 28 H100 M1100 28 H1172" stroke="#E2231A" stroke-width="2" opacity=".8"/>
+  <path d="M28 162 H100 M1100 162 H1172" stroke="#1685E8" stroke-width="2" opacity=".8"/>
+
+  <g opacity=".35" stroke="#5B6570" stroke-width="1">
+    <path d="M90 0 V190 M1110 0 V190"/>
+    <path d="M0 52 H1200 M0 138 H1200"/>
+  </g>
+
+  <g fill="none" stroke="#E2231A" stroke-width="2" opacity=".75">
+    <path d="M42 75 H78 L90 63 L102 87 L114 75 H145"/>
+    <path d="M1055 75 H1080 L1092 63 L1104 87 L1116 75 H1158"/>
+  </g>
+
+  <g fill="none" stroke="#1685E8" stroke-width="1.5" opacity=".8">
+    <circle cx="66" cy="118" r="5"/>
+    <circle cx="1134" cy="118" r="5"/>
+    <path d="M66 123 V143 H120 M1134 123 V143 H1080"/>
+  </g>
+
+  <g text-anchor="middle" font-family="Arial, Helvetica, sans-serif">
+    <text x="600" y="91"
+          font-size="51"
+          font-weight="900"
+          letter-spacing="2"
+          fill="url(#titleGradient)"
+          filter="url(#glow)">
+      LIVE OPS &amp; UPDATES
+    </text>
+
+    <g clip-path="url(#titleClip)" opacity=".4">
+      <path d="M-180 25 L-80 25 L80 125 L-20 125 Z" fill="#FFFFFF">
+        <animate attributeName="transform" values="translate(0 0);translate(1450 0)" dur="4.8s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <text x="600" y="128"
+          font-size="15"
+          font-weight="700"
+          letter-spacing="4"
+          fill="#C8D4E0"
+          filter="url(#softGlow)">
+      SECTION 17 / OPERATIONS &amp; GAME EVOLUTION
+    </text>
+  </g>
+
+  <rect x="260" y="148" width="680" height="2" rx="1" fill="url(#lineGradient)">
+    <animate attributeName="opacity" values=".45;1;.45" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <circle cx="260" cy="149" r="3" fill="#E2231A">
+    <animate attributeName="opacity" values=".35;1;.35" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="940" cy="149" r="3" fill="#1685E8">
+    <animate attributeName="opacity" values="1;.35;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <g fill="#E2231A">
+    <circle cx="180" cy="48" r="2"/>
+    <circle cx="195" cy="48" r="2" opacity=".55"/>
+    <circle cx="210" cy="48" r="2" opacity=".3"/>
+  </g>
+
+  <g fill="#1685E8">
+    <circle cx="990" cy="48" r="2" opacity=".3"/>
+    <circle cx="1005" cy="48" r="2" opacity=".55"/>
+    <circle cx="1020" cy="48" r="2"/>
+  </g>
+</svg>
