@@ -1,0 +1,110 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
+  <title id="title">Feature Checklist</title>
+  <desc id="desc">Animated red and blue title with a checklist, progress indicators and validation marks for Roblox Tycoon Blueprint.</desc>
+
+  <defs>
+    <linearGradient id="titleGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E2231A">
+        <animate attributeName="stop-color" values="#E2231A;#FF554A;#E2231A" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#1685E8">
+        <animate attributeName="stop-color" values="#1685E8;#55B5FF;#1685E8" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1685E8" stroke-opacity=".10" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="230" rx="18" fill="#101820"/>
+  <rect width="1200" height="230" rx="18" fill="url(#grid)"/>
+
+  <path d="M0 190H1200" stroke="url(#titleGradient)" stroke-width="2" opacity=".65"/>
+  <path d="M0 195H1200" stroke="#FFFFFF" stroke-opacity=".08"/>
+
+  <g opacity=".15" fill="none" stroke="#1685E8" stroke-width="2">
+    <path d="M35 35H210V65H275"/>
+    <path d="M920 35H1090V65H1160"/>
+    <path d="M35 145H145V175H220"/>
+    <path d="M980 145H1080V175H1160"/>
+  </g>
+
+  <!-- Checklist panel -->
+  <g transform="translate(100 48)">
+    <rect x="0" y="0" width="125" height="130" rx="13" fill="#202B35" stroke="#1685E8" stroke-width="2"/>
+
+    <rect x="14" y="13" width="97" height="20" rx="5" fill="#0055AA"/>
+    <path d="M25 23H98" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+
+    <g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="17" y="47" width="15" height="15" rx="3" stroke="#1685E8"/>
+      <path d="M20 54L24 58L31 49" stroke="#E2231A">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.25;.8;1" dur="4s" repeatCount="indefinite"/>
+      </path>
+      <path d="M43 54H99" stroke="#D8E1EA" opacity=".8"/>
+
+      <rect x="17" y="77" width="15" height="15" rx="3" stroke="#1685E8"/>
+      <path d="M20 84L24 88L31 79" stroke="#1685E8">
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.4;.9;1" dur="4s" repeatCount="indefinite"/>
+      </path>
+      <path d="M43 84H88" stroke="#D8E1EA" opacity=".8"/>
+
+      <rect x="17" y="107" width="15" height="15" rx="3" stroke="#1685E8"/>
+      <path d="M43 114H102" stroke="#D8E1EA" opacity=".8"/>
+    </g>
+
+    <animateTransform attributeName="transform" type="translate" values="100 48;100 44;100 48" dur="4s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Main title -->
+  <g transform="translate(285 72)">
+    <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="5" fill="#AAB7C4">ROBLOX TYCOON BLUEPRINT</text>
+
+    <text x="0" y="65" font-family="Arial, Helvetica, sans-serif" font-size="61" font-weight="900" letter-spacing="1" fill="url(#titleGradient)" filter="url(#glow)">FEATURE CHECKLIST</text>
+
+    <text x="3" y="96" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="2.5" fill="#D8E1EA">DESIGN  /  SECURITY  /  TESTING  /  RELEASE</text>
+  </g>
+
+  <!-- Validation panel -->
+  <g transform="translate(1030 70)">
+    <rect x="0" y="0" width="90" height="90" rx="13" fill="#202B35" stroke="#E2231A" stroke-width="2"/>
+
+    <circle cx="45" cy="45" r="29" fill="none" stroke="#1685E8" stroke-width="5" opacity=".3"/>
+    <circle cx="45" cy="45" r="29" fill="none" stroke="#1685E8" stroke-width="5" stroke-dasharray="182" stroke-dashoffset="182" stroke-linecap="round" transform="rotate(-90 45 45)">
+      <animate attributeName="stroke-dashoffset" values="182;55;182" dur="5s" repeatCount="indefinite"/>
+    </circle>
+
+    <path d="M29 46L40 57L62 33" fill="none" stroke="#E2231A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="opacity" values=".35;1;.35" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#E2231A">
+    <circle cx="260" cy="42" r="3">
+      <animate attributeName="opacity" values=".2;1;.2" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="930" cy="170" r="3">
+      <animate attributeName="opacity" values="1;.2;1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g fill="#1685E8">
+    <circle cx="235" cy="174" r="3">
+      <animate attributeName="opacity" values="1;.25;1" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="970" cy="48" r="3">
+      <animate attributeName="opacity" values=".2;1;.2" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
