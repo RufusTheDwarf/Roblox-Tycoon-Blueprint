@@ -1,0 +1,108 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+  <title id="title">World Design</title>
+  <desc id="desc">Animated red and blue title for section 10 of Roblox Tycoon Blueprint, focused on world and environment design.</desc>
+
+  <defs>
+    <linearGradient id="worldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2231A"/>
+      <stop offset="48%" stop-color="#F04435"/>
+      <stop offset="52%" stop-color="#1685E8"/>
+      <stop offset="100%" stop-color="#0055AA"/>
+    </linearGradient>
+
+    <linearGradient id="worldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2231A" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#E2231A"/>
+      <stop offset="75%" stop-color="#1685E8"/>
+      <stop offset="100%" stop-color="#1685E8" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="worldGlow" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="worldGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#5B6570" stroke-opacity=".18" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="190" rx="12" fill="#151719"/>
+  <rect width="1200" height="190" rx="12" fill="url(#worldGrid)"/>
+
+  <g fill="none" stroke="#5B6570" stroke-width="1" opacity=".4">
+    <path d="M28 28H150L170 48H240"/>
+    <path d="M1172 28H1050L1030 48H960"/>
+    <path d="M28 162H150L170 142H240"/>
+    <path d="M1172 162H1050L1030 142H960"/>
+  </g>
+
+  <g fill="none" stroke="#E2231A" stroke-width="1.5" opacity=".65">
+    <path d="M105 95H190L210 75H250"/>
+    <path d="M95 105H165L185 125H250"/>
+  </g>
+
+  <g fill="none" stroke="#1685E8" stroke-width="1.5" opacity=".65">
+    <path d="M1095 95H1010L990 75H950"/>
+    <path d="M1105 105H1035L1015 125H950"/>
+  </g>
+
+  <g fill="#E2231A">
+    <circle cx="105" cy="95" r="3"/>
+    <circle cx="95" cy="105" r="3"/>
+  </g>
+
+  <g fill="#1685E8">
+    <circle cx="1095" cy="95" r="3"/>
+    <circle cx="1105" cy="105" r="3"/>
+  </g>
+
+  <g text-anchor="middle">
+    <text
+      x="600"
+      y="91"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="62"
+      font-weight="900"
+      letter-spacing="3"
+      fill="url(#worldGradient)"
+      filter="url(#worldGlow)">
+      WORLD DESIGN
+    </text>
+
+    <text
+      x="600"
+      y="121"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="14"
+      font-weight="700"
+      letter-spacing="4"
+      fill="#E5E5E5">
+      SECTION 10 / ENVIRONMENT &amp; EXPLORATION
+    </text>
+  </g>
+
+  <rect x="250" y="143" width="700" height="2" rx="1" fill="#393B3D"/>
+
+  <rect x="250" y="143" width="700" height="2" rx="1" fill="url(#worldLine)">
+    <animate attributeName="opacity" values=".4;1;.4" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="250" y="143" width="90" height="2" rx="1" fill="#E2231A">
+    <animate attributeName="x" values="250;860;250" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <g fill="none" stroke="#5B6570" stroke-width="1.5" opacity=".7">
+    <path d="M180 55L195 40L210 55V75H180Z"/>
+    <path d="M990 55L1005 40L1020 55V75H990Z"/>
+    <path d="M180 115L195 130L210 115V95H180Z"/>
+    <path d="M990 115L1005 130L1020 115V95H990Z"/>
+  </g>
+
+  <path d="M0 8H1200" stroke="#E2231A" stroke-width="2" opacity=".8"/>
+  <path d="M0 182H1200" stroke="#1685E8" stroke-width="2" opacity=".8"/>
+</svg>
