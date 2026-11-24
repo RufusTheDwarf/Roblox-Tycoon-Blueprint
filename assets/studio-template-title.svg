@@ -1,0 +1,87 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
+  <title id="title">Studio Template</title>
+  <desc id="desc">Animated red and blue title for the Roblox Studio starter template.</desc>
+
+  <defs>
+    <linearGradient id="titleGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E2231A">
+        <animate attributeName="stop-color" values="#E2231A;#FF554A;#E2231A" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#1685E8">
+        <animate attributeName="stop-color" values="#1685E8;#55B5FF;#1685E8" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1685E8" stroke-opacity=".10" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="230" rx="18" fill="#101820"/>
+  <rect width="1200" height="230" rx="18" fill="url(#grid)"/>
+
+  <path d="M0 190H1200" stroke="url(#titleGradient)" stroke-width="2" opacity=".65"/>
+  <path d="M0 195H1200" stroke="#FFFFFF" stroke-opacity=".08"/>
+
+  <g opacity=".16" fill="none" stroke="#1685E8" stroke-width="2">
+    <path d="M35 35H220V65H280"/>
+    <path d="M920 35H1090V65H1160"/>
+    <path d="M35 145H145V175H220"/>
+    <path d="M980 145H1080V175H1160"/>
+  </g>
+
+  <g transform="translate(95 67)">
+    <rect x="0" y="0" width="110" height="100" rx="13" fill="#202B35" stroke="#E2231A" stroke-width="2"/>
+    <rect x="14" y="15" width="82" height="12" rx="4" fill="#E2231A"/>
+    <rect x="14" y="38" width="36" height="45" rx="5" fill="#0055AA"/>
+    <rect x="58" y="38" width="38" height="8" rx="3" fill="#1685E8"/>
+    <rect x="58" y="53" width="38" height="8" rx="3" fill="#1685E8" opacity=".7"/>
+    <rect x="58" y="68" width="25" height="8" rx="3" fill="#1685E8" opacity=".45"/>
+    <circle cx="32" cy="60" r="6" fill="#FFFFFF" opacity=".9"/>
+    <path d="M55 88H75" stroke="#E5E5E5" stroke-width="3" stroke-linecap="round"/>
+    <animateTransform attributeName="transform" type="translate" values="95 67;95 63;95 67" dur="4s" repeatCount="indefinite"/>
+  </g>
+
+  <g transform="translate(285 72)">
+    <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="5" fill="#AAB7C4">ROBLOX TYCOON BLUEPRINT</text>
+    <text x="0" y="65" font-family="Arial, Helvetica, sans-serif" font-size="57" font-weight="900" letter-spacing="1" fill="url(#titleGradient)" filter="url(#glow)">STUDIO TEMPLATE</text>
+    <text x="3" y="96" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="2.5" fill="#D8E1EA">STARTER SCRIPTS  /  CLIENT-SERVER FOUNDATION</text>
+  </g>
+
+  <g transform="translate(1030 75)" fill="none" stroke-width="3">
+    <rect x="0" y="0" width="88" height="88" rx="13" stroke="#1685E8" opacity=".9"/>
+    <path d="M19 24H69M19 43H55M19 62H63" stroke="#1685E8" stroke-linecap="round"/>
+    <circle cx="70" cy="43" r="5" fill="#E2231A" stroke="none">
+      <animate attributeName="r" values="5;8;5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="19" cy="24" r="4" fill="#E2231A" stroke="none"/>
+    <circle cx="19" cy="62" r="4" fill="#1685E8" stroke="none"/>
+  </g>
+
+  <g fill="#E2231A">
+    <circle cx="260" cy="42" r="3">
+      <animate attributeName="opacity" values=".2;1;.2" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="930" cy="170" r="3">
+      <animate attributeName="opacity" values="1;.2;1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g fill="#1685E8">
+    <circle cx="235" cy="174" r="3">
+      <animate attributeName="opacity" values="1;.25;1" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="970" cy="48" r="3">
+      <animate attributeName="opacity" values=".2;1;.2" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
