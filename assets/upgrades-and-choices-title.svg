@@ -1,0 +1,200 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230" role="img" aria-labelledby="title desc">
+  <title id="title">Upgrades And Choices</title>
+  <desc id="desc">Animated red and blue title featuring upgrade paths, machine progression, branching choices and improvement indicators.</desc>
+
+  <defs>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2231A">
+        <animate attributeName="stop-color" values="#E2231A;#FF6258;#E2231A" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#1685E8">
+        <animate attributeName="stop-color" values="#1685E8;#65BCFF;#1685E8" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5145"/>
+      <stop offset="100%" stop-color="#A91412"/>
+    </linearGradient>
+
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#55B5FF"/>
+      <stop offset="100%" stop-color="#0055AA"/>
+    </linearGradient>
+
+    <linearGradient id="panelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#283746"/>
+      <stop offset="100%" stop-color="#111820"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="230" rx="18" fill="#10151D"/>
+
+  <g opacity="0.14" stroke="#8194A9" stroke-width="1">
+    <path d="M0 45H1200M0 90H1200M0 135H1200M0 180H1200"/>
+    <path d="M100 0V230M200 0V230M300 0V230M400 0V230M500 0V230M600 0V230M700 0V230M800 0V230M900 0V230M1000 0V230M1100 0V230"/>
+  </g>
+
+  <!-- Left: upgrade machine -->
+  <g transform="translate(63 43)">
+    <rect x="0" y="0" width="190" height="145" rx="12"
+          fill="url(#panelGradient)" stroke="#3C4B5D" stroke-width="1.5"/>
+
+    <rect x="13" y="13" width="164" height="22" rx="6" fill="#202E3D"/>
+    <text x="95" y="28" text-anchor="middle" fill="#DCE6F1"
+          font-size="10" font-family="Arial, sans-serif" font-weight="bold"
+          letter-spacing="1.5">UPGRADE SYSTEM</text>
+
+    <!-- Machine body -->
+    <rect x="37" y="57" width="75" height="60" rx="7"
+          fill="#1A2A39" stroke="#1685E8" stroke-width="2"/>
+
+    <rect x="48" y="68" width="53" height="37" rx="4"
+          fill="#263B4F" stroke="#55B5FF" stroke-width="1.2"/>
+
+    <circle cx="74.5" cy="86.5" r="12" fill="#0055AA"/>
+    <path d="M74.5 74V99M62 86.5H87" stroke="#8AD0FF" stroke-width="2"/>
+    <circle cx="74.5" cy="86.5" r="4" fill="#FFFFFF" filter="url(#softGlow)">
+      <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Upgrade arrow -->
+    <path d="M128 105V58M116 70L128 58L140 70"
+          fill="none" stroke="#E2231A" stroke-width="5"
+          stroke-linecap="round" stroke-linejoin="round"
+          filter="url(#softGlow)">
+      <animate attributeName="stroke" values="#E2231A;#FF796F;#E2231A" dur="3s" repeatCount="indefinite"/>
+    </path>
+
+    <rect x="24" y="126" width="142" height="5" rx="2.5" fill="#364555"/>
+    <rect x="24" y="126" width="88" height="5" rx="2.5" fill="#1685E8">
+      <animate attributeName="width" values="45;125;45" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Main title -->
+  <g text-anchor="middle" font-family="Arial, Helvetica, sans-serif">
+    <text x="600" y="91" font-size="43" font-weight="900"
+          letter-spacing="1.2" fill="url(#titleGradient)">
+      UPGRADES
+    </text>
+
+    <text x="600" y="137" font-size="37" font-weight="800"
+          letter-spacing="3" fill="#FFFFFF">
+      AND CHOICES
+    </text>
+
+    <text x="600" y="166" font-size="13" letter-spacing="3" fill="#A9B8C8">
+      IMPROVE · SPECIALIZE · STRATEGIZE
+    </text>
+  </g>
+
+  <!-- Animated underline -->
+  <g filter="url(#glow)">
+    <rect x="390" y="180" width="420" height="3" rx="1.5" fill="#283746"/>
+    <rect x="390" y="180" width="95" height="3" rx="1.5" fill="#E2231A">
+      <animate attributeName="x" values="390;715;390" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="95;125;95" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Right: branching upgrade choices -->
+  <g transform="translate(960 36)">
+    <rect x="0" y="0" width="185" height="153" rx="12"
+          fill="url(#panelGradient)" stroke="#3C4B5D" stroke-width="1.5"/>
+
+    <text x="92.5" y="19" text-anchor="middle" fill="#DCE6F1"
+          font-size="10" font-family="Arial, sans-serif"
+          font-weight="bold" letter-spacing="1.5">CHOOSE YOUR PATH</text>
+
+    <!-- Central node -->
+    <circle cx="92" cy="48" r="12" fill="#263B4F" stroke="#FFFFFF" stroke-width="1.5"/>
+    <path d="M92 40V56M84 48H100" stroke="#FFFFFF" stroke-width="2"
+          stroke-linecap="round"/>
+
+    <!-- Branch lines -->
+    <path d="M92 60V73M92 73L43 92M92 73L92 92M92 73L141 92"
+          fill="none" stroke="#6D8298" stroke-width="1.8"/>
+
+    <!-- Speed choice -->
+    <rect x="12" y="92" width="55" height="43" rx="6"
+          fill="#321D20" stroke="#E2231A" stroke-width="1.4"/>
+    <path d="M29 116L36 104L43 111L51 99"
+          fill="none" stroke="#FF766D" stroke-width="2.2"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="39.5" y="128" text-anchor="middle" fill="#E9D7D7"
+          font-size="8" font-family="Arial, sans-serif">SPEED</text>
+
+    <!-- Value choice -->
+    <rect x="70" y="92" width="45" height="43" rx="6"
+          fill="#172A3B" stroke="#1685E8" stroke-width="1.4"/>
+    <path d="M92.5 100L102 109L92.5 119L83 109Z"
+          fill="none" stroke="#70BFFF" stroke-width="2"/>
+    <text x="92.5" y="128" text-anchor="middle" fill="#DCE6F1"
+          font-size="8" font-family="Arial, sans-serif">VALUE</text>
+
+    <!-- Capacity choice -->
+    <rect x="118" y="92" width="55" height="43" rx="6"
+          fill="#202E3D" stroke="#64788D" stroke-width="1.4"/>
+    <rect x="133" y="102" width="25" height="15" rx="2"
+          fill="none" stroke="#A9C4DB" stroke-width="1.7"/>
+    <path d="M133 109H158" stroke="#A9C4DB" stroke-width="1.2"/>
+    <text x="145.5" y="128" text-anchor="middle" fill="#DCE6F1"
+          font-size="8" font-family="Arial, sans-serif">CAPACITY</text>
+
+    <!-- Animated choice indicators -->
+    <circle cx="39" cy="86" r="3" fill="#E2231A" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="92" cy="86" r="3" fill="#1685E8" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="145" cy="86" r="3" fill="#A9C4DB" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Floating connection particles -->
+  <g filter="url(#softGlow)">
+    <circle cx="292" cy="55" r="2.5" fill="#E2231A">
+      <animate attributeName="cy" values="55;68;55" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="880" cy="160" r="2.5" fill="#1685E8">
+      <animate attributeName="cy" values="160;146;160" dur="2.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Decorative lines -->
+  <g fill="none" stroke-width="1.5" opacity="0.7">
+    <path d="M265 190H340" stroke="#E2231A">
+      <animate attributeName="stroke-dasharray" values="0 75;75 0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M870 34H945" stroke="#1685E8">
+      <animate attributeName="stroke-dasharray" values="0 75;75 0" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="228" rx="17"
+        fill="none" stroke="#526477" stroke-opacity="0.45"/>
+</svg>
